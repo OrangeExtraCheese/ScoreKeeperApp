@@ -2,7 +2,7 @@
     <string name="app_name">Quidditch Match</string>
 
     <string name="zero">0</string>
-    <string name="teamName">Team Name</string>
+    <string name="teamName">Enter Team Name</string>
     <string name="score">Score:</string>
     <string name="fouls">Fouls:</string>
 </resources>
