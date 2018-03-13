@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Quidditch Match</string>
+
     <string name="zero">0</string>
-    <string name="teamAName">Team A</string>
-    <string name="teamBName">Team B</string>
+    <string name="teamName">Team Name</string>
+    <string name="score">Score:</string>
+    <string name="fouls">Fouls:</string>
 </resources>
