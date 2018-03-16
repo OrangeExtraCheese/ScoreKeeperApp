@@ -8,4 +8,23 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="NormalText">
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:fontFamily">@font/magic_school_one</item>
+        <item name="android:textColor">#FFFF00</item>
+    </style>
+
+    <style name="Pointer">
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:fontFamily">@font/magic_school_one</item>
+        <item name="android:textColor">#FFFF00</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="Score">
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:fontFamily">@font/kingthings_willow</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
 </resources>

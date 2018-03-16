@@ -35,6 +35,8 @@
         android:layout_height="wrap_content"
 
         android:text="@string/teamName"
+        style="@style/NormalText"
+
 
         app:layout_constraintBottom_toTopOf="@+id/team_a_score"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -47,14 +49,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginEnd="8dp"
-
-        android:layout_marginStart="8dp"
-
         android:text="@string/score"
+        style="@style/NormalText"
+
         app:layout_constraintBottom_toTopOf="@+id/team_a_fouls_text"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/team_a_score_pointer"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/pointer"
+        style="@style/Pointer"
+
+        app:layout_constraintTop_toTopOf="@+id/team_a_score_text"
+        app:layout_constraintStart_toEndOf="@id/team_a_score_text" />
 
     <TextView
         android:id="@+id/team_a_score"
@@ -62,11 +76,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="0"
+        android:text="@string/zero"
+        style="@style/Score"
 
-        app:layout_constraintBottom_toTopOf="@+id/team_a_fouls"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintStart_toEndOf="@+id/team_a_score_text" />
+        app:layout_constraintTop_toTopOf="@id/team_a_score_pointer"
+        app:layout_constraintStart_toEndOf="@id/team_a_score_text"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+
+        />
 
     <TextView
         android:id="@+id/team_a_fouls_text"
@@ -75,12 +92,25 @@
         android:layout_height="wrap_content"
 
         android:text="@string/fouls"
+        style="@style/NormalText"
 
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
 
+        android:layout_marginLeft="15dp"
         android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/team_a_fouls_pointer"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/pointer"
+        style="@style/Pointer"
+
+        app:layout_constraintTop_toTopOf="@+id/team_a_fouls_text"
+        app:layout_constraintStart_toEndOf="@id/team_a_fouls_text" />
 
     <TextView
         android:id="@+id/team_a_fouls"
@@ -89,12 +119,11 @@
         android:layout_height="wrap_content"
 
         android:text="@string/zero"
+        style="@style/Score"
 
-        app:layout_constraintBottom_toBottomOf="@id/team_a_fouls_text"
+        app:layout_constraintTop_toTopOf="@id/team_a_fouls_pointer"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toEndOf="@+id/team_a_fouls_text" />
-
-
 
     <TextView
         android:id="@+id/team_b_name"
@@ -103,6 +132,7 @@
         android:layout_height="wrap_content"
 
         android:text="@string/teamName"
+        style="@style/NormalText"
 
         app:layout_constraintBottom_toTopOf="@+id/team_b_score"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,11 +145,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Score"
+        android:text="@string/score"
+        style="@style/NormalText"
 
         app:layout_constraintBottom_toTopOf="@+id/team_b_fouls_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline" />
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/team_b_score_pointer"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/pointer"
+        style="@style/Pointer"
+
+        app:layout_constraintTop_toTopOf="@+id/team_b_score_text"
+        app:layout_constraintStart_toEndOf="@id/team_b_score_text" />
 
     <TextView
         android:id="@+id/team_b_score"
@@ -128,10 +173,12 @@
         android:layout_height="wrap_content"
 
         android:text="@string/zero"
+        style="@style/Score"
 
-        app:layout_constraintBottom_toTopOf="@+id/team_b_fouls"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/team_b_score_text" />
+
+        app:layout_constraintTop_toTopOf="@id/team_b_score_pointer"
+        app:layout_constraintStart_toEndOf="@id/team_b_score_text"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/team_b_fouls_text"
@@ -140,12 +187,25 @@
         android:layout_height="wrap_content"
 
         android:text="@string/fouls"
+        style="@style/NormalText"
 
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@id/guideline"
 
+        android:layout_marginLeft="15dp"
         android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/team_b_fouls_pointer"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/pointer"
+        style="@style/Pointer"
+
+        app:layout_constraintTop_toTopOf="@+id/team_b_fouls_text"
+        app:layout_constraintStart_toEndOf="@id/team_b_fouls_text" />
 
     <TextView
         android:id="@+id/team_b_fouls"
@@ -154,7 +214,9 @@
         android:layout_height="wrap_content"
 
         android:text="@string/zero"
-        app:layout_constraintBottom_toBottomOf="@id/team_b_fouls_text"
+        style="@style/Score"
+
+        app:layout_constraintTop_toTopOf="@id/team_b_fouls_pointer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/team_b_fouls_text" />
 

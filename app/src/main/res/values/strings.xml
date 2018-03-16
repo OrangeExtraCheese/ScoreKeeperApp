@@ -3,6 +3,7 @@
 
     <string name="zero">0</string>
     <string name="teamName">Enter Team Name</string>
-    <string name="score">Score:</string>
-    <string name="fouls">Fouls:</string>
+    <string name="score">Score</string>
+    <string name="fouls">Fouls</string>
+    <string name="pointer">></string>
 </resources>
