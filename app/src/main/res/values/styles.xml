@@ -8,23 +8,38 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="NormalText">
+    <style name="TextTheme">
         <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
         <item name="android:fontFamily">@font/magic_school_one</item>
         <item name="android:textColor">#FFFF00</item>
+        <item name="android:layout_marginLeft">@dimen/text_margin_vertical</item>
+        <item name="android:layout_marginRight">@dimen/text_margin_vertical</item>
     </style>
 
-    <style name="Pointer">
-        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
-        <item name="android:fontFamily">@font/magic_school_one</item>
-        <item name="android:textColor">#FFFF00</item>
-        <item name="android:layout_marginLeft">5dp</item>
+    <style name="ToLeftPointerTheme" parent="TextTheme">
+        <item name="android:layout_marginLeft">@dimen/to_left_pointer_mergin_left</item>
     </style>
 
-    <style name="Score">
+    <style name="ScoreTheme">
         <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
         <item name="android:fontFamily">@font/kingthings_willow</item>
         <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginLeft">@dimen/score_margin_vertical</item>
+        <item name="android:layout_marginRight">@dimen/score_margin_vertical</item>
+    </style>
+
+    <style name="FoulsTheme" parent="ScoreTheme">
+        <item name="android:textColor">#F44336</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="ButtonTheme">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:fontFamily">@font/magic_school_one</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
 </resources>
