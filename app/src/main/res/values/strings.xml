@@ -5,5 +5,10 @@
     <string name="teamName">Enter Team Name</string>
     <string name="score">Score</string>
     <string name="fouls">Fouls</string>
-    <string name="pointer">></string>
+    <string name="pointerToRight">></string>
+    <string name="pointerToLeft">&lt;</string>
+    <string name="dialog_title">SNITCH CAPTURED?!</string>
+    <string name="dialog_msg">Do you confirm that snitch has been captured? It grants the team of successful seeker 150 points and ends the match!</string>
+    <string name="dialog_positive_button">YES!</string>
+    <string name="dialog_negative_button">Hmm, no</string>
 </resources>
