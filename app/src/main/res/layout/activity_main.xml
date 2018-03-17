@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="@string/score"
+        android:text="@string/score_text"
         style="@style/TextTheme"
 
         app:layout_constraintBottom_toTopOf="@+id/team_a_fouls_text"
@@ -85,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="@string/fouls"
+        android:text="@string/fouls_text"
         style="@style/TextTheme"
 
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
@@ -135,7 +135,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="@string/score"
+        android:text="@string/score_text"
         style="@style/TextTheme"
 
         app:layout_constraintBottom_toTopOf="@+id/team_b_fouls_text"
@@ -176,7 +176,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="@string/fouls"
+        android:text="@string/fouls_text"
         style="@style/TextTheme"
 
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
@@ -215,8 +215,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-
-        android:text="Button"
+        android:text="@string/foul"
         style="@style/ButtonTheme"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -230,7 +229,7 @@
         android:layout_width="86dp"
         android:layout_height="wrap_content"
 
-        android:text="Button"
+        android:text="@string/snitch"
         style="@style/ButtonTheme"
 
         app:layout_constraintBottom_toTopOf="@+id/button_reset"
@@ -245,7 +244,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Button"
+        android:text="@string/goal"
         style="@style/ButtonTheme"
 
         app:layout_constraintBottom_toTopOf="@+id/button_foulA"
@@ -259,7 +258,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Button"
+        android:text="@string/foul"
         style="@style/ButtonTheme"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -274,7 +273,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Button"
+        android:text="@string/goal"
         style="@style/ButtonTheme"
 
         app:layout_constraintBottom_toTopOf="@+id/button_foulB"
@@ -287,7 +286,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Button"
+        android:text="@string/snitch"
         style="@style/ButtonTheme"
 
         app:layout_constraintBottom_toTopOf="@+id/button_reset"

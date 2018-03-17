@@ -3,10 +3,15 @@
 
     <string name="zero">0</string>
     <string name="teamName">Enter Team Name</string>
-    <string name="score">Score</string>
-    <string name="fouls">Fouls</string>
+    <string name="score_text">Score</string>
+    <string name="fouls_text">Fouls</string>
     <string name="pointerToRight">></string>
     <string name="pointerToLeft">&lt;</string>
+
+    <string name="goal">Goal!</string>
+    <string name="foul">Foul</string>
+    <string name="snitch">Snitch\n captured</string>
+
     <string name="dialog_title">SNITCH CAPTURED?!</string>
     <string name="dialog_msg">Do you confirm that snitch has been captured? It grants the team of successful seeker 150 points and ends the match!</string>
     <string name="dialog_positive_button">YES!</string>
