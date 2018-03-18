@@ -2,5 +2,8 @@
 <resources>
     <dimen name="score_margin_vertical">10dp</dimen>
     <dimen name="text_margin_vertical">10dp</dimen>
-    <dimen name="to_left_pointer_mergin_left">10dp</dimen>
+    <dimen name="to_left_pointer_margin_left">10dp</dimen>
+    <dimen name="button_margin_vertical">15dp</dimen>
+    <dimen name="button_shape_radius">10dp</dimen>
+    <dimen name="btn__shape_stroke">3dp</dimen>
 </resources>
