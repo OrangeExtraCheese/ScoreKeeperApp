@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity
 {
 /*    What is a good solution/practise here? In this one I'm declaring global object variables, referencing Buttons and TextViews. They are initialized in onCreate() method.
       These memeber variables are then accesed from methods, like aFoulsIncrease().
-
      The other solution is to use this variables as local ones, inside methods, but then there would be many methods for displaying changes, for example, instead of single
     public void display (int numb, TextView textView)
     {
@@ -34,7 +33,6 @@ public class MainActivity extends AppCompatActivity
         TextView txtTeamAScore = findViewById(R.id.team_a_score);
         txtTeamAScore.setText(""+numb);
     }
-
     On the other hand using member variables is discouraged because of risk of memory leaks. What is a good strategy to handle this matter?
     */
 
@@ -54,10 +52,11 @@ public class MainActivity extends AppCompatActivity
     TextView txtTeamBName;
     TextView txtWinner;
 
-    int aScore = 0;
-    int bScore = 0;
-    int aFouls = 0;
-    int bFouls = 0;
+    private int aScore = 0;
+    private int bScore = 0;
+    private int aFouls = 0;
+    private int bFouls = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -85,8 +84,8 @@ public class MainActivity extends AppCompatActivity
 
         // The whichTeam integer is an argument used by method createAlertListener which of these two methods: aCaughtSnitch and bCaughtSnitch, should be bound to positive button of alert dialog.
         // Alert dialog is the same for both buttons, but the outcome of clicking on positive button should be different, whether the alert dialog was called by button for team A or team B.
-            btnTeamASnitch.setOnClickListener(createAlertListener(0));
-            btnTeamBSnitch.setOnClickListener(createAlertListener(1));
+        btnTeamASnitch.setOnClickListener(createAlertListener(0));
+        btnTeamBSnitch.setOnClickListener(createAlertListener(1));
     }
 
     private View.OnClickListener createAlertListener(final int whichTeam)
@@ -165,16 +164,19 @@ public class MainActivity extends AppCompatActivity
         aScore+=10;
         display(aScore, txtTeamAScore);
     }
+
     public void aFoulsIncrease(View view)
     {
         aFouls++;
         display(aFouls, txtTeamAFouls);
     }
+
     public void bScoreIncrease(View view)
     {
         bScore+=10;
         display(bScore, txtTeamBScore);
     }
+
     public void bFoulsIncrease(View view)
     {
         bFouls++;
@@ -242,6 +244,3 @@ public class MainActivity extends AppCompatActivity
     }
 
 }
-
-
-
