@@ -17,40 +17,28 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 
 public class MainActivity extends AppCompatActivity
 {
-/*    What is a good solution/practise here? In this one I'm declaring global object variables, referencing Buttons and TextViews. They are initialized in onCreate() method.
-      These memeber variables are then accesed from methods, like aFoulsIncrease().
-     The other solution is to use this variables as local ones, inside methods, but then there would be many methods for displaying changes, for example, instead of single
-    public void display (int numb, TextView textView)
-    {
-        textView.setText(""+numb);
-    }
-    there would be many like:
-    public void displayTeamAScore (int numb)
-    {
-        TextView txtTeamAScore = findViewById(R.id.team_a_score);
-        txtTeamAScore.setText(""+numb);
-    }
-    On the other hand using member variables is discouraged because of risk of memory leaks. What is a good strategy to handle this matter?
-    */
 
-    Button btnTeamASnitch;
-    Button btnTeamBSnitch;
-    Button btnTeamAGoal;
-    Button btnTeamBGoal;
-    Button btnTeamAFoul;
-    Button btnTeamBFoul;
-    Button btnReset;
+    @BindView(R.id.team_a_score) TextView txtTeamAScore;
+    @BindView(R.id.team_b_score) TextView txtTeamBScore;
+    @BindView(R.id.team_a_fouls) TextView txtTeamAFouls;
+    @BindView(R.id.team_b_fouls) TextView txtTeamBFouls;
+    @BindView(R.id.team_a_name)  TextView txtTeamAName;
+    @BindView(R.id.team_b_name)  TextView txtTeamBName;
+    @BindView(R.id.winner)       TextView txtWinner;
 
-    TextView txtTeamAScore;
-    TextView txtTeamBScore;
-    TextView txtTeamAFouls;
-    TextView txtTeamBFouls;
-    TextView txtTeamAName;
-    TextView txtTeamBName;
-    TextView txtWinner;
+    @BindView(R.id.button_goalA) Button btnTeamAGoal;
+    @BindView(R.id.button_goalB) Button btnTeamBGoal;
+    @BindView(R.id.button_foulA) Button btnTeamAFoul;
+    @BindView(R.id.button_foulB) Button btnTeamBFoul;
+    @BindView(R.id.snitchA)      Button btnTeamASnitch;
+    @BindView(R.id.snitchB)      Button btnTeamBSnitch;
+    @BindView(R.id.button_reset) Button btnReset;
 
     private int aScore = 0;
     private int bScore = 0;
@@ -64,21 +52,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        txtTeamAScore =  findViewById(R.id.team_a_score);
-        txtTeamBScore =  findViewById(R.id.team_b_score);
-        txtTeamAFouls =  findViewById(R.id.team_a_fouls);
-        txtTeamBFouls =  findViewById(R.id.team_b_fouls);
-        txtTeamAName=    findViewById(R.id.team_a_name);
-        txtTeamBName=    findViewById(R.id.team_b_name);
-        txtWinner =      findViewById(R.id.winner);
-
-        btnTeamAGoal = findViewById(R.id.button_goalA);
-        btnTeamBGoal = findViewById(R.id.button_goalB);
-        btnTeamAFoul = findViewById(R.id.button_foulA);
-        btnTeamBFoul = findViewById(R.id.button_foulB);
-        btnTeamASnitch = findViewById(R.id.snitchA);
-        btnTeamBSnitch = findViewById(R.id.snitchB);
-        btnReset = findViewById(R.id.button_reset);
+        ButterKnife.bind(this);
 
         renderImages();
 
